@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant</title>
+    <link rel="stylesheet" href="ai.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sriracha' rel='stylesheet'>
+    <!-- <script defer src="script.js"></script> -->
+</head>
+<body>
+
+    <div class="header">
+    <div class="mentora">Mentora</div>
+    
+
+        <div class="nav">
+            
+            <h3>Home</h3>
+            <h3>Explore</h3>
+            <h3>Study Material</h3>
+            <h3>My Planner</h3>
+        </div>
+        
+
+
+</div>
+<div class='all'>
+    <div class="pp"></div>
+        <h1 class="h1">AI Voice Assistant</h1>
+        <div class="container">
+        <div id="mentor-container">
+            <!-- <div id="mentor-face"></div>
+            <div id="mentor-mouth"></div> -->
+            <img class="aiimg" src="aigif1-unscreen.gif" alt="">
+        </div>
+        <button id="speak-btn">🎤 Speak</button>
+        <button id="stop-btn">Stop</button>
+
+        <div class="output">
+
+        <p id="response">Waiting for your question...</p>
+        </div>
+    </div>
+    </div>
+    <script src="ai.js">
+    </script>
+<script type="text/javascript">
+    function updateResponse(newText) {
+        // Remove '*' from the response text
+        var cleanText = newText.replace(/\*/g, "");
+        
+        // Update the HTML content
+        document.getElementById("response").innerText = cleanText;
+    }
+
+</script>
+</body>
+</html>

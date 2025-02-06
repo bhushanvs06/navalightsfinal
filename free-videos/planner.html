@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Categories</title>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sriracha' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* text-align: center; */
+            background-color: #f4f4f4;
+        }
+        /* .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        } */
+        .category-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .category-buttons button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .category-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .video-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .video-item {
+            width: 300px;
+        }
+        iframe {
+            width: 100%;
+            height: 170px;
+            border-radius: 5px;
+        }
+        /* .header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+    background-color: #578FCA;
+    color: #fdffff;
+    border-radius: 1em;
+    font-family: 'MuseoModerno'; */
+    
+    
+    .link{
+    color: white;
+    text-decoration: none;
+    }
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Adjusted for logo and navigation */
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(232, 229, 229);
+  border-radius: 15px;
+  }
+  
+.mentora {
+    grid-column: 1; 
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Caveat;font-size: 35px;
+  }
+  
+.nav {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Each nav item gets its own column */
+    gap: 20px; /* Space between items */
+    justify-content: end; /* Aligns nav items to the right */
+  }
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 14vw;
+  }
+.nav h3 {
+    margin: 0;
+    cursor: pointer;
+    /* font-family: Caveat;font-size: 35px; */
+    font-family: 'Sriracha';
+    font-weight: 200;
+    /* font-family: 'Courier New', Courier, monospace; */
+    
+  }
+  .text{
+    margin-top: 60px;
+  }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="mentora">Mentora</div>
+            <div class="nav">
+                <a href="">
+                    <h3>Home</h3>
+                </a>
+                <h3>Explore</h3>
+                <h3>Study Material</h3>
+                <h3>My Planner</h3>
+            </div>
+    </div>
+
+   
+    <h2 class="text">Choose What you want to learn?</h2>
+    <div class="category-buttons">
+        <button onclick="showVideos('softwareDevelopment')">Software Development</button>
+        <button onclick="showVideos('uiux')">UI/UX Design</button>
+        <button onclick="showVideos('animation')">Animation</button>
+        <button onclick="showVideos('graphicDesign')">Graphic Design</button>
+        <button onclick="showVideos('digitalMarketing')">Digital Marketing</button>
+        <button onclick="showVideos('gameDevelopment')">Game Development</button>
+    </div>
+    <div class="video-list" id="video-list"></div>
+</div>
+
+<script>
+    const videos = {
+        softwareDevelopment: [
+            { title: "Learn JavaScript in 1 Hour", id: "PkZNo7MFNFg" },
+            { title: "Python for Beginners", id: "rfscVS0vtbw" },
+            { title: "React Crash Course", id: "DLX62G4lc44" },
+            { title: "Web Development Full Course", id: "Q33KBiDriJY" },
+            { title: "How to Become a Full-Stack Developer", id: "L9E1Jb1KWr0" },
+            { title: "Java Programming for Beginners", id: "eIrMbAQSU34" },
+            { title: "C++ Tutorial for Beginners", id: "ZzaPdXTrSb8" },
+            { title: "Building an API with Node.js", id: "Oe421EPjeBE" },
+            { title: "Machine Learning Basics", id: "Gv9_4yMHFhI" },
+            { title: "Data Structures & Algorithms", id: "8hly31xKli0" },
+            { title: "SQL for Beginners", id: "HXV3zeQKqGY" },
+            { title: "Django Web Framework Tutorial", id: "F5mRW0jo-U4" },
+            { title: "What is DevOps?", id: "0yWAtQ6wYNM" },
+            { title: "Learn Kubernetes in 10 Minutes", id: "X48VuDVv0do" },
+            { title: "AWS Cloud Computing Basics", id: "ulprqHHWlng" },
+            { title: "Cybersecurity for Beginners", id: "6g0XUhdjZrA" },
+            { title: "Blockchain and Cryptocurrency Explained", id: "SSo_EIwHSd4" },
+            { title: "Flutter App Development", id: "x0uinJvhNxI" },
+            { title: "Introduction to Rust Programming", id: "5C_HPTJg5ek" },
+            { title: "AI in Software Development", id: "IOtZJ36M8zY" }
+        ],
+        uiux: [
+            { title: "Introduction to UI/UX Design", id: "ysOe4FdUay8" },
+            { title: "Figma UI/UX Tutorial", id: "FTFaQWZBqQ8" },
+            { title: "Adobe XD for Beginners", id: "iG2d5xg5pbM" },
+            { title: "UX Design Thinking Process", id: "4iPW6h8ys2E" },
+            { title: "Designing a Mobile App UI", id: "TsG9qB4ntUI" }
+        ],
+        animation: [
+            { title: "2D Animation Basics", id: "uDqjIdI4bF4" },
+            { title: "3D Animation with Blender", id: "yVMPG4dGbL4" },
+            { title: "After Effects Animation", id: "DLlD3fW_0HQ" }
+        ],
+        graphicDesign: [
+            { title: "Adobe Photoshop Basics", id: "0Tpmj2C67hw" },
+            { title: "Illustrator for Beginners", id: "IB9eFUzDBOY" },
+            { title: "Canva Graphic Design", id: "zGhbo0DsN1M" }
+        ],
+        digitalMarketing: [
+            { title: "SEO Basics", id: "lI1SEH1oV3w" },
+            { title: "Google Ads Tutorial", id: "SraT5sXnJ4A" },
+            { title: "Social Media Marketing", id: "L5-09M6xgWg" }
+        ],
+        gameDevelopment: [
+            { title: "Unity Game Development", id: "5-X-Ebh1kYA" },
+            { title: "Unreal Engine Basics", id: "RLPLSRPoc3k" },
+            { title: "Godot Game Development", id: "jUo7Qnmc8vE" }
+        ]
+    };
+
+    function showVideos(category) {
+        const videoList = document.getElementById("video-list");
+        videoList.innerHTML = "";  
+
+        videos[category].forEach(video => {
+            const videoItem = document.createElement("div");
+            videoItem.className = "video-item";
+            videoItem.innerHTML = `
+                <h4>${video.title}</h4>
+                <iframe src="https://www.youtube.com/embed/${video.id}" frameborder="0" allowfullscreen></iframe>
+            `;
+            videoList.appendChild(videoItem);
+        });
+    }
+</script>
+
+</body>
+</html>

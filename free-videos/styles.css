@@ -60,6 +60,7 @@ button:hover {
 a {
     text-decoration: none;
     display: block;
+    color:black;
 /*     margin-top: 5px; */
 }
 

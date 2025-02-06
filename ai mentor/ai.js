@@ -3,11 +3,37 @@ const speakBtn = document.getElementById("speak-btn");
 const stopBtn = document.getElementById("stop-btn");
 const responseText = document.getElementById("response");
 let recognition;
-
+// var img = document.getElementsByClassName("aiimg")[0]; // Select the first element with class "aiimg"
+// var x=img.src = "listen.gif"; // Replace with your actual image path
+// img.innerHTML=x
 function speakText(text) {
     const speech = new SpeechSynthesisUtterance(text);
     speechSynthesis.speak(speech);
+
+
+    speech.onstart = function () {
+        // var img = document.getElementsByClassName("aiimg")[0]; // Select the first element with class "aiimg"
+        // var x=img.src = "speak.gif"; // Replace with your actual image path
+        // img.innerHTML=x
+        // console.log("AI started speaking");
+        img = document.getElementsByClassName("aiimg")[0];
+        let x = img.src = "speak.gif"
+        img.innerHTML = x
+    }
+    speech.onend = function () {
+        img = document.getElementsByClassName("aiimg")[0];
+        let y = img.src = "listen(2).gif"
+        img.innerHTML = y
+
+    }
+
 }
+
+
+
+
+
+
 
 function stopResponse() {
     speechSynthesis.cancel(); // Stop speech synthesis
@@ -76,3 +102,11 @@ async function fetchAIResponse(query) {
 
 speakBtn.addEventListener("click", listenSpeech);
 stopBtn.addEventListener("click", stopResponse);
+stopBtn.addEventListener("click",()=>{
+    img = document.getElementsByClassName("aiimg")[0];
+        let y = img.src = "listen(2).gif"
+        img.innerHTML = y
+})
+
+
+

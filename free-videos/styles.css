@@ -58,10 +58,9 @@ button:hover {
 }
 
 a {
-    color: #007bff;
     text-decoration: none;
     display: block;
-    margin-top: 5px;
+/*     margin-top: 5px; */
 }
 
 a:hover {

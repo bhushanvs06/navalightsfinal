@@ -1,5 +1,5 @@
 ## Website Link<br/>
-[Visit Mentora] (https://bhushanvs06.github.io/navalightsfinal/home.html)<br/>
+[Visit Mentora] (https://bhushanvs06.github.io/../home.html)<br/>
 <br/>
 Demo Video Link<br/>
 [Watch The Video] (https://youtu.be/hpDMPJHT1JY)<br/> 

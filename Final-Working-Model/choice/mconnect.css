@@ -1,0 +1,84 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Adjusted for logo and navigation */
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(232, 229, 229);
+    border-radius: 15px;
+    grid-area: header;
+  }
+  
+.mentora {
+    grid-column: 1; 
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Caveat;font-size: 35px;
+    padding-left: 5em;
+  }
+  
+.nav {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    gap: 20px;
+    justify-content: center; 
+  }
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    padding-left:12em;
+  }
+.nav h3 {
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Sriracha';
+    font-weight:200;
+}
+.button {
+    display:flex;
+    justify-content: center;
+    gap: 13em;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* background-color: #f0c14b; */
+    /* border: 1px solid; */
+     color: #111;
+    cursor: pointer;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+ button{
+    padding: 10px 20px;
+    gap: 20px;
+} 
+.ai{
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.hu{
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.aimentorcontainer{
+    border-radius: 15px;
+    color: #111;
+    text-align: center;
+    font-family: Sriracha;
+    size: 10px;
+}
+.humentor{
+    margin-top: 0em;
+    border-radius: 15px;
+    color: #111;
+    text-align: center;
+    font-family: Sriracha;
+    size: 10px;
+}

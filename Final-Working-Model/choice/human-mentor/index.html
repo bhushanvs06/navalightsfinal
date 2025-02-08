@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sriracha' rel='stylesheet'>
+    <style>
+        a:hover {
+            color: rgb(98, 16, 16);
+            /* Change text color when hovered */
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+    <div class="header">
+        
+        <a href="../../home.html"style="text-decoration:none;">
+            <div class="mentora" style="text-decoration: none;">Mentora</div>
+            </a>
+       
+        <div class="nav">
+            <a href="../../home.html">
+                <h3>Home</h3>
+            </a>
+            <a href="../../ai test\index (2).html">
+                <h3>Ai Test</h3>
+            </a>
+            <a href="../mconnect.html">
+                <h3>Mentor-Connect</h3>
+            </a>
+            <a href="../../free-videos\planner.html">
+                <h3>My Planner</h3>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tp">
+        <h1>Mentor Connect</h1>
+        <div class="role-select">
+            <label for="role">Are you a Mentor or User?</label>
+            <select id="role">
+                <option value="user">User</option>
+                <option value="mentor">Mentor</option>
+            </select>
+        </div>
+        <div class="category-select">
+            <label for="category">Choose a Category:</label>
+            <select id="category">
+                <option value="animation">Animation Expert</option>
+                <option value="sports">Sports</option>
+                <option value="esports">E-Sports</option>
+            </select>
+        </div>
+        <center><div class="button">
+
+            <button id="requestBtn">Request Mentor</button></center>
+        </div>
+        <div id="status"></div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: grid;
+    grid-area: con;
+    padding-bottom: 15em;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.role-select, .category-select {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    /* background-color: #007bff; */
+    background-color: white;
+    color: black;
+    /* border: none; */
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+}
+
+button:hover {
+    background-color: #4b3e3e;
+    color: white;
+    transition: 0.7s;
+}
+
+#status {
+    margin-top: 20px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color:black;
+/*     margin-top: 5px; */
+}
+
+a:hover {
+    text-decoration: underline;
+} 
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Adjusted for logo and navigation */
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(232, 229, 229);
+    border-radius: 15px;
+    grid-area: header;
+  }
+  
+.mentora {
+    grid-column: 1; 
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Caveat;font-size: 35px;
+    padding-left: 5em;
+  }
+  
+.nav {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    gap: 20px;
+    justify-content: center; 
+  }
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    padding-left:12em;
+  }
+.nav h3 {
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Sriracha';
+    font-weight:200;
+}
+.all{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "con con con"
+    "con con con";
+
+}
+.tp{
+    padding: 5em;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+

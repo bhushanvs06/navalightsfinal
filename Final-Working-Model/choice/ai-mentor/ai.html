@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant</title>
+    <link rel="stylesheet" href="ai.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sriracha' rel='stylesheet'>
+    <!-- <script defer src="script.js"></script> -->
+    <style>
+        a:hover {
+            color: rgb(98, 16, 16);
+            /* Change text color when hovered */
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="../../home.html"style="text-decoration:none;">
+            <div class="mentora" style="text-decoration: none;">Mentora</div>
+            </a>
+    
+
+    <div class="nav">
+        <a href="../../home.html">
+            <h3>Home</h3>
+        </a>
+        <a href="../../ai test\index (2).html">
+            <h3>Ai Test</h3>
+        </a>
+        <a href="../mconnect.html">
+            <h3>Mentor-Connect</h3>
+        </a>
+        <a href="../../free-videos\planner.html">
+            <h3>My Planner</h3>
+        </a>
+    </div>
+        
+x
+
+</div>
+<div class='all'>
+    <div class="pp"></div>
+        <h1 class="h1">AI Voice Assistant</h1>
+        <div class="container">
+        <div id="mentor-container">
+            <!-- <div id="mentor-face"></div>
+            <div id="mentor-mouth"></div> -->
+            <img class="aiimg" src="listen(1).gif" alt="">
+        </div>
+            <!-- <img class="aiimg" src="Untitled video - Made with Clipchamp .gif" alt=""> -->
+        <button id="speak-btn">🎤 Speak</button>
+        <button id="stop-btn">Stop</button>
+
+        <div class="output">
+
+        <p id="response">Waiting for your question...</p>
+        </div>
+    </div>
+    </div>
+    <script src="ai.js">
+    </script>
+<script type="text/javascript">
+    function updateResponse(newText) {
+        // Remove '*' from the response text
+        var cleanText = newText.replace(/\*/g, "");
+        
+        // Update the HTML content
+        document.getElementById("response").innerText = cleanText;
+    }
+
+</script>
+</body>
+</html>

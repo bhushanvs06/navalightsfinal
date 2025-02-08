@@ -1,5 +1,8 @@
-# **Project Name: Mentora**  
-**Website Link:** [Mentora](https://bhushanvs06.github.io/navalightsfinal/home.html)  <br/>  
+## Website Link<br/>
+[Visit Mentora] (https://bhushanvs06.github.io/navalightsfinal/home.html)<br/>
+<br/>
+Demo Video Link<br/>
+[Watch The Video] (https://youtu.be/hpDMPJHT1JY)<br/> 
 
 ## **GitHub File Guide**  <br/>  
 1) **home.html** – Main page of the website  <br/>  

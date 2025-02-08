@@ -7,10 +7,10 @@ Mentora is an AI-powered career guidance platform designed to help users explore
 3. **Planner** - A structured career roadmap.<br/>
 <br/>
 ## Website Link<br/>
-[Visit Mentora](https://bhushanvs06.github.io/navalightsfinal/home.html)<br/>
+[Visit Mentora] (https://bhushanvs06.github.io/navalightsfinal/home.html)<br/>
 <br/>
 Demo Video Link<br/>
-[Watch The Video](https://youtu.be/hpDMPJHT1JY)<br/>
+[Watch The Video] (https://youtu.be/hpDMPJHT1JY)<br/>
 ## Repository Structure<br/>
 ```
 Mentora/<br/>

@@ -1,5 +1,4 @@
 # Mentora<br/>
-<br/>
 ## Project Overview<br/>
 Mentora is an AI-powered career guidance platform designed to help users explore their interests and align them with suitable career paths. The platform offers three key features:<br/>
 1. **AI Test** - An interest-based career recommendation system.<br/>

@@ -60,12 +60,29 @@ Once users identify their interests and have background knowledge about their ch
 This ensures that users have a clear, step-by-step guide to follow their aspirations effectively.  <br/>  
 
 ---  
-
-Let me know if you need any more adjustments! 🚀<br/>
-
+## Future Goals<br/>
+- Using **Llama 3.0** to train our own model that can revolutionize career guidance for student's Welfare.<br/>
+<br/>
+## How to Use<br/>
+1. Clone the repository:<br/>
+   ```bash<br/>
+   git clone https://github.com/bhushanvs06/navalightsfinal.git<br/>
+   ```<br/>
+2. Open `home.html` in a web browser.<br/>
+3. Take the AI test to discover suitable careers.<br/>
+4. Connect with AI or human mentors for further guidance.<br/>
+5. Use the planner to create a structured career roadmap.<br/>
+<br/>
+## Contribution<br/>
+- Fork the repository.<br/>
+- Create a new branch.<br/>
+- Make your changes and submit a pull request.<br/>
 <br/>
 ---<br/>
-**Contributors:** Bhushan VS & Team<br/>
-<br/>
+**Contributors:**<br/>(1) Aniket Sonone<br/>(2)Bhushan vs
+<br/><br/>
 For any issues or improvements, feel free to contribute to the GitHub repository.<br/>
+
+
+
 

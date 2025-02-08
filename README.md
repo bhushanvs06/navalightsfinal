@@ -1,6 +1,5 @@
 TEAM NAME:Navalights
 WEBSITE LINK: [https://bhushanvs06.github.io/navalightsfinal/home.html](https://bhushanvs06.github.io/navalightsfinal/Final-Working-Model/home.html)
-GitHub link:https://github.com/bhushanvs06/navalightsfinal.git
 Project name: Mentora
 Github file guide:
 1)home.html-The main page of the website

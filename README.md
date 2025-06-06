@@ -9,7 +9,7 @@ Mentora is an AI-powered career guidance platform designed to help users explore
 [Visit Mentora] (https://bhushanvs06.github.io/navalightsfinal/Final-Working-Model/home.html)<br/>
 <br/>
 Demo Video Link<br/>
-[Watch The Video] (https://youtu.be/hpDMPJHT1JY)<br/> 
+[Watch The Video] (https://youtu.be/hpDMPJHT1JY)<br/>
 
 ## **GitHub File Guide**  <br/>  
 1) **home.html** – Main page of the website  <br/>  
@@ -17,7 +17,7 @@ Demo Video Link<br/>
 3) **ai.html** – Redirecting page to Mentor Connect  <br/>  
 4) **planner.html** – Redirecting page to Planner  <br/>  
 
-Each file should be accessed in the sequence mentioned above, along with the respective CSS and JS files.  <br/>  
+Each file should be accessed in the sequence mentioned above, along with the respective CSS and JS files  <br/>  
 
 ---  
 

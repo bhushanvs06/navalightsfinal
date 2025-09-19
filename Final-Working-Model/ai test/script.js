@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAgEz9UFJdJe7-28tQzid-xHahLZirdXqk"; // Replace with your actual API key
+const API_KEY = "AIzaSyDaiUs1Ax14GMhpIZ_nzyUbHE6KA6xjTAM"; // Replace with your actual API key
 const chatBox = document.getElementById("chat-box");
 const stopBtn = document.getElementById("stop-btn");
 
@@ -6,7 +6,7 @@ let recognitionInstance = null; // Store recognition globally
 
 async function getGeminiResponse(prompt) {
     const response = await fetch(
-        "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=" + API_KEY,
+        "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=" + API_KEY,
         {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -110,3 +110,4 @@ async function startTest() {
     chatBox.innerHTML += `<p class="ai-message"><strong>AI:</strong> Based on your responses, a suitable career for you is: ${careerSuggestion}</p>`;
     await speak("Based on your responses, a suitable career for you is " + careerSuggestion);
 }
+

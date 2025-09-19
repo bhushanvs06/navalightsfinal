@@ -9,8 +9,8 @@ document.getElementById('roadmapForm').addEventListener('submit', async function
 });
 
 async function generateRoadmap(goal) {
-    const apiKey = 'AIzaSyBdwtsAYHB0GntXZ9vc2d8KMcGEnV2unS8'; // Replace with a secure backend proxy, not an exposed key
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`;
+    const apiKey = 'AIzaSyDaiUs1Ax14GMhpIZ_nzyUbHE6KA6xjTAM'; // Replace with a secure backend proxy, not an exposed key
+    const url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
 
     // Read dataset file
     const dataset = await readDatasetFile();
@@ -152,4 +152,5 @@ async function readDatasetFile() {
         console.error("Error reading dataset file:", error);
         return "";
     }
+
 }

@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAgEz9UFJdJe7-28tQzid-xHahLZirdXqk";
+const API_KEY = "AIzaSyDaiUs1Ax14GMhpIZ_nzyUbHE6KA6xjTAM";
 const speakBtn = document.getElementById("speak-btn");
 const stopBtn = document.getElementById("stop-btn");
 const responseText = document.getElementById("response");
@@ -75,7 +75,7 @@ async function fetchAIResponse(query) {
 
         const prompt = `Dataset: ${dataset}\nUser Query: ${query}`;
 
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`, {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -107,6 +107,7 @@ stopBtn.addEventListener("click",()=>{
         let y = img.src = "listen(2).gif"
         img.innerHTML = y
 })
+
 
 
 
